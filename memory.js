@@ -38,8 +38,8 @@ $(document).ready(function() {
    };
    
    function matchCards(obj) {
-    
-      if (CardOne === CardTwo) {
+    // while(arr[randomIndex])
+      if (CardOne === CardTwo && flipped[0].attr('id')!==flipped[1].attr('id')) {
           
           flipped[0].css("background-color", 'green');
           flipped[1].css("background-color", 'green');
@@ -64,7 +64,8 @@ $(document).ready(function() {
     cardsFlipped = 0;
   }
    
-   $('.card').click(function() {
+   $('.card').click(function(e) {
+    // console.log(e.target.id);
     $("#messages").empty();
     $(this).css("background-color", 'black');
 
@@ -74,12 +75,14 @@ $(document).ready(function() {
         cardsFlipped = 1;
 
         
-    }
-    else {
+    } else if(e.target.id != flipped[0].id){
+        console.log(e.target.id);
+        console.log(flipped);
+        // console.log(e.target.id === flipped[0].attr('id'));
         CardTwo = $(this).text();
         flipped[1] = $(this);
         matchCards(this);
-    }
+    } 
    });
    
 });
