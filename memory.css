@@ -1,97 +1,31 @@
+
 #messages, h1 {
     width: 500px;
     height: 60px;
     margin: 0 auto;
-    font-size: 3em;
+    font-size: 2.5em;
     text-align: center;
     font-family: Papyrus, fantasy;
 }
 #board {
-    margin-left: 25%;
     width: 600px;
     height: 600px;
-    display: inline-block;
+    margin: auto;
+    display: absolute;   
 
-}
-
-
-
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:300);
-
-.jumbotron{
-  margin-bottom: 0px;
-}
-
-.jumbotron .logo {
-  width: 15%;
-  margin-top: -1.5%;
-  float: left;
-}
-
-.download{
-  text-align: center;
-}
-
-footer{
-  padding: 20px;
-  margin-top: 30px;
-  background-color: #eee;
-  color: #333;
-  border-top: 1px #ccc solid;
 }
 
 .card {
+    width: 85px;
+    height: 85px;
+    margin: 5px;
+    background-color: black;
+    display: inline-block;
+    border-radius: 40px;
+    text-align: center;
+    font-size: 1.5em;
+    float: none;
+/*    transform: rotate(180deg);
+*/
 }
 
-.card-grid {
-  width: 100px;
-  height: 100px;
-  margin: 20px;
-  display: inline-block;
-}
-
-.card-grid .front, .card-grid .back {
-  padding: 10px;
-  text-align: center;
-  border: 1px #333 solid;
-}
-
-.card-grid .front {
-  background-color: #eee;
-}
-
-.card-grid .back {
-  background-color: #333;
-  color: white;
-}
-
-.card .front{
-  width: 85px !important;
-  height: 85px !important;
-  margin: 5px;
-  background-color: black;
-  display: inline-block !important;
-  border-radius: 40px;
-  text-align: center;
-  font-size: 1.5em;
-  float: left;
-  position: relative !important;
-}
-
-.clearfix {
-  overflow: auto;
-  zoom: 1;
-}
-
-.card .back{
-  width: 85px !important;
-  height: 85px !important;
-  margin: 5px;
-  background-color: orange;
-  display: inline-block !important;
-  border-radius: 40px;
-  text-align: center;
-  font-size: 1.5em;
-  float: left;
-  position: relative;
-}
